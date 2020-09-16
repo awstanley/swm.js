@@ -48,6 +48,12 @@ export function build(doc, destination, source) {
                     }
                 }
             }
+            if(source.hasOwnProperty("v")) {
+                let v = source.v;
+                if (typeof(v) === "string") {
+                    d.appendChild(doc.createTextNode(v));
+                }
+            }
             destination.appendChild(d);
         }
     } else {

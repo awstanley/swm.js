@@ -38,6 +38,8 @@ Objects may optionally have a `c` field, which is an `Array` of children.  Each 
 
 Objects may optionally have an `a` field, which is an `Object` of attributes.  This is just a key/value pairing, both of which must be strings.
 
+Objects may optionally have a `v` field, which is the text value field.  If this value is a string, it will be inserted into object as a text node.
+
 ## Licence
 
 Apache 2.0
