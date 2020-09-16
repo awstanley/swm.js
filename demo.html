@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>swm demo</title>
+    </head>
+  <body>
+      <script type="module">
+        import { Builder } from "./module/swm.js";
+        let builder = new Builder(document);
+        builder.build(document.body, {
+            "t": "div",
+            "a": {
+                "id": "a",
+                "class": "foo",
+            },
+            "c": [
+                "div",
+                {
+                    "t": "span",
+                    "a": {
+                        "class": "bar",
+                    }
+                },
+            ],
+        });
+      </script>
+  </body>
+</html>
